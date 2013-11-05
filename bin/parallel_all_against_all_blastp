@@ -1,0 +1,45 @@
+#!/usr/bin/env perl
+
+package Bio::PanGenome::Main::ParallelAllAgainstAllBlastp;
+
+# ABSTRACT: Take in a FASTA file of proteins and blast against itself
+# PODNAME: parallel_all_against_all_blastp
+
+
+BEGIN { unshift( @INC, '../lib' ) }
+BEGIN { unshift( @INC, './lib' ) }
+BEGIN { unshift( @INC, '/software/pathogen/internal/prod/lib/' ) }
+BEGIN { unshift( @INC, '/software/pathogen/external/lib/site_perl/5.8.8/' ) }
+use Bio::PanGenome::CommandLine::ParallelAllAgainstAllBlastp;
+
+Bio::PanGenome::CommandLine::ParallelAllAgainstAllBlastp->new(args => \@ARGV, script_name => $0)->run;
+
+__END__
+
+=pod
+
+=head1 NAME
+
+parallel_all_against_all_blastp - Take in a FASTA file of proteins and blast against itself
+
+=head1 VERSION
+
+version 1.133090
+
+=head1 SYNOPSIS
+
+Take in a FASTA file of proteins and blast against itself
+
+=head1 AUTHOR
+
+Andrew J. Page <ap13@sanger.ac.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2013 by Wellcome Trust Sanger Institute.
+
+This is free software, licensed under:
+
+  The GNU General Public License, Version 3, June 2007
+
+=cut

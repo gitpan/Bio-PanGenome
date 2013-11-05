@@ -1,0 +1,55 @@
+---
+abstract: 'Create a pan genome'
+author:
+  - 'Andrew J. Page <ap13@sanger.ac.uk>'
+build_requires:
+  Data::Dumper: 0
+  Env::Path: 0
+  File::Slurp: 0
+  Test::Most: 0
+  strict: 0
+  warnings: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921'
+license: gpl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Bio-PanGenome
+requires:
+  Bio::PanGenome::Output::NumberConservedGroups: 0
+  Bio::PanGenome::Output::NumberNewGroups: 0
+  Bio::PanGenome::Output::NumberTotalGroups: 0
+  Bio::PanGenome::Output::NumberUniqueGroups: 0
+  Bio::SeqIO: 0
+  Bio::Tools::GFF: 0
+  Bio::TreeIO: 0
+  Chart::Clicker: 0
+  Chart::Clicker::Context: 0
+  Chart::Clicker::Data::DataSet: 0
+  Chart::Clicker::Data::Marker: 0
+  Chart::Clicker::Data::Series: 0
+  Chart::Clicker::Renderer::Bar: 0
+  Cwd: 0
+  Exception::Class: 0
+  File::Basename: 0
+  File::Copy: 0
+  File::Find::Rule: 0
+  File::Path: 0
+  File::Temp: 0
+  Geometry::Primitive::Rectangle: 0
+  Getopt::Long: 0
+  Graphics::Color::RGB: 0
+  LSF: 0
+  LSF::JobManager: 0
+  List::Util: 0
+  Moose: 0
+  Moose::Role: 0
+  POSIX: 0
+  Text::CSV: 0
+resources:
+  homepage: http://www.sanger.ac.uk/
+  repository: https://github.com/sanger-pathogens/Bio-PanGenome.git
+version: 1.133090
